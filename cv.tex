@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper,sans]{moderncv/moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{green}
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{2.8cm}
+
+\urlstyle{sf}
+
+\usepackage{multibib}
+
+\newlength{\bibliographysectionspacing}
+\setlength{\bibliographysectionspacing}{.15in}
+
+\newcommand{\bibsectiontitleformat}[1]{#1}
+\newcommand{\paperSecTitle}   {\bibsectiontitleformat{Peer Reviewed Journal Papers}}
+\newcommand{\workshopSecTitle}{\bibsectiontitleformat{Workshop Papers \& Technical Reports}}
+\newcites{papers,workshops}{\paperSecTitle,\workshopSecTitle}
+
+
+
+\name{David}{Beckingsale}
+%\title{Resumé title}
+\address{Blarcreen, Archattan, Oban}{Argyll PA37 1RG, UK}{}
+%\phone[mobile]{+1~(925)~332~8287}
+\phone[mobile]{+44~(779)~227~2562}
+%\phone[fixed]{+44~(345)~678~901}
+\email{dab@dcs.warwick.ac.uk}
+\homepage{go.warwick.ac.uk/davidbeckingsale}
+%\social[linkedin]{john.doe}
+%\social[twitter]{jdoe}
+%\social[github]{davidbeckingsale}
+%\extrainfo{additional information}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\begin{document}
+\makecvtitle
+\vspace{-2.0em}
+
+\input{sections/education.tex}
+\input{sections/awards.tex}
+\input{sections/research-experience.tex}
+\input{sections/professional-activities.tex}
+\input{sections/skills.tex}
+%\input{sections/teaching.tex}
+%\input{sections/administrative-duties.tex}
+\input{sections/grants.tex}
+\input{sections/software.tex}
+\input{sections/invited-talks.tex}
+\input{sections/publications}
+%\input{letter/cover-letter.tex}
+\end{document}
